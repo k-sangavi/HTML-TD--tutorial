@@ -4,7 +4,7 @@
   </head>
   <body>
     <h1>Login Form</h1>
-    <form method="post" action="process-form.php">
+    <form method="get" action="process-form.php">
       <p>
         username : <br />
         <input
@@ -81,4 +81,26 @@
 
 
 
-   <!-- Radio inputs -->
+   <!-- checkboxes in form -->
+
+   <h2>Checkboxes in Form</h2>
+<body>
+    <form action=""></form>
+    <p>
+        Name: <br>
+        <input type="text" name="your name">
+    </p>
+    <p>
+        My hobbies are <br>
+        <input type="checkbox" name="hobbies[]" value="drawing">drawing
+        <input type="checkbox" name="hobbies[]" value="cooking">cooking
+        <input type="checkbox" name="hobbies[]" value="photography">photography
+        <input type="checkbox" name="hobbies[]" value="playing" checked>playing
+        <input type="checkbox" name="hobbies[]" value="video gaming"> video gaming
+        <input type="checkbox" name="hobbies[]" value="water gaming"> water gaming
+
+    </p>
+    <p>
+        <input type="button" value="send">
+    </p>
+</body>
