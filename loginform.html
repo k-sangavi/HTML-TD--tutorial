@@ -53,13 +53,13 @@
    <form action="">
     <p>
        <label for="your name"> Name : </label><br>
-        <input type="text" name=" Your Name"></p>
+        <input type="text" name=" Your Name" id="your name"></p>
     <p>
        <label for="Email" >Email : </label><br> 
-        <input type="text" name="Email"></p>
+        <input type="email" name="Email" id="email"></p>
     <p>
        <label for="subject"> Subject : </label><br>
-        <input type="text" name="Subject"></p>
+        <input type="text" name="Subject" id="subject"></p>
         <p>
             <p>
                I want to learn first <br>
@@ -168,11 +168,11 @@
  <h2>Job application form</h2>
  <form enctype="multipart/form-data"> 
     <p>
-       <label>Your Name: </label><br>
+       <label for="your name">Your Name: </label><br>
         <input type="text" name="your name">
  </p>
  <p>
-  <label>  Your Education: </label><br>
+  <label for="education">  Your Education: </label><br>
     <select name=" education" >
     <option>select education</option>   
     <option value="B.E">B.E</option>
@@ -182,7 +182,7 @@
 </select>
  </p>
  <p>
-    <label>You want to apply for the position:</label> <br>
+    <label for="position">You want to apply for the position:</label> <br>
     <select name="select position">
         <option>select position</option>
         <option value="Front end developer">Front end developer</option>
@@ -201,16 +201,17 @@
 <!-- fieldsets -->
 
 
-<form>
-<h2>Login details</h2>
+<h2>Login with fieldsets</h2>
 <fieldset>
+<legend>Login details</legend>
+
   <p>
   <label for="User name">Name:</label> <br>
   <input type="text" name="User name" id="User name" placeholder="enter your name"> <br>
 </p>
 <p>
   <label for="Email">Email:</label> <br>
-  <input type="text" name="Email" id="Email">
+  <input type="Email" name="Email" id="Email">
 </p>
 <p>
   <label for="Password">Password:</label> <br>
@@ -222,8 +223,30 @@
 </p>
 
 </fieldset>
+
+
+
+<!-- HTML5 Form Fields validation -->
+<h2>HTML5 form field validation</h2>
+<form>
+  <p>
+<label for="Email">Email: </label>
+<input type="email" name="email" id="emali id" >
+</p>
+<p>
+  <label for="Age">Age: </label>
+  <input type="number" name="Age" id="age"  min="15" max="90">
+</p>
+<p><label for="dob">Date Of Birth: </label>
+<input type="date" name="dob" id="dob">
+</p>
+<p>
+  <label for="price">Price Range:</label>
+  <input type="range" name="price" id="price" min="0" max="10000" step="100">
+</p>
+<p><input type="submit" value="submit"></p>
 </form>
 
 
-<!--  -->
 
+<!--  -->
