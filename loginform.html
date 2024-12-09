@@ -6,7 +6,7 @@
     <h1>Login Form</h1>
     <form method="get" action="process-form.php">
       <p>
-        username : <br />
+       <label> username : </label> <br />
         <input
           type="text"
           name="username"
@@ -17,14 +17,14 @@
         />
       </p>
       <p>
-        password : <br />
+     <label> password :</label> <br />
         <input
           type="password"
           name="password"
           placeholder="Password ( 6 characters)"
         />
       </p>
-      <input type="button" value="Send" />
+      <input type="submit" value="Send" />
     </form>
   </body>
 </html>
@@ -33,15 +33,15 @@
 <h2>Comment Form</h2>
 <form>
     <p>
-        Username : <br>
+       <label> Username : </label><br>
         <input type="text" name="Username" placeholder="Sangavi" size="15" maxlength="25">
     </p>
     <p>
-        Email : <br>
+       <label> Email : </label><br>
         <input type="text" name="mail id" placeholder="@gmail.com">
     </p>
     <p>
-        comments : <br>
+        <label>comments :</label> <br>
       <textarea name="comments" cols="35" rows="5" placeholder="Comments"></textarea> 
     </p>
 </form>
@@ -53,24 +53,24 @@
    <form action="">
 
     <p>
-        Name : <br>
+       <label> Name : </label><br>
         <input type="text" name="Name"></p>
     <p>
-       Email : <br> 
+       <label >Email : </label><br> 
         <input type="text" name="Email"></p>
     <p>
-        Subject : <br>
+       <label> Subject : </label><br>
         <input type="text" name="Subject"></p>
         <p>
             <p>
-                I want to learn first
-                <input type="radio" name="learn first" value="HTML" checked> HTML 
-                <input type="radio" name="learn first" value="CSS"> CSS 
-                <input type="radio" name="learn first" value="JavaScript"> JavaScript
+               I want to learn first <br>
+                <input type="radio" name="learn first" id="HTML" value="HTML" checked> <label for="html">HTML </label>
+                <input type="radio" name="learn first" id="CSS" value="CSS"> <label for="css">CSS </label>
+                <input type="radio" name="learn first" id="JavaScript" value="JavaScript"> <label for="javascript">JavaScript</label>
             </p> 
 
 
-       Message : <br>
+     <label> Message :</label>  <br>
     <textarea name="Message" cols="25" rows="3" placeholder="comments"></textarea>
         </p>
         <p>
@@ -87,17 +87,17 @@
 <body>
     <form action=""></form>
     <p>
-        Name: <br>
+       <label> Name:</label> <br>
         <input type="text" name="your name">
     </p>
     <p>
-        My hobbies are <br>
-        <input type="checkbox" name="hobbies[]" value="drawing">drawing
-        <input type="checkbox" name="hobbies[]" value="cooking">cooking
-        <input type="checkbox" name="hobbies[]" value="photography">photography
-        <input type="checkbox" name="hobbies[]" value="playing" checked>playing
-        <input type="checkbox" name="hobbies[]" value="video gaming"> video gaming
-        <input type="checkbox" name="hobbies[]" value="water gaming"> water gaming
+       My hobbies are <br>
+        <input type="checkbox" name="hobbies[]" id="drawing" value="drawing"><label for="drawing">drawing</label>
+        <input type="checkbox" name="hobbies[]" id="cooking" value="cooking"><label for="cooking">cooking</label>
+        <input type="checkbox" name="hobbies[]" id="phototgraphy" value="photography"><label for="photography">photography</label>
+        <input type="checkbox" name="hobbies[]" id="playing" value="playing" checked><label for="playing">playing</label>
+        <input type="checkbox" name="hobbies[]" id="video gaming" value="video gaming"> <label for="video gaming">video gaming</label>
+        <input type="checkbox" name="hobbies[]" id="water gaming" value="water gaming"><label for="water gaming">water gaming</label> 
 
     </p>
     <p>
@@ -108,7 +108,7 @@
 <!-- select dob -->
  <h2>select date of birth</h2>
  <p>
-    Select Date of Birth: <br>
+    <label>Select Date of Birth: </label><br>
     <select name="dob" id="dob">
         <option value="">select date</option>
         <option value="1">1</option>
@@ -139,14 +139,14 @@
  <h2>sports training applicaiton form</h2>
 <form >
     <p>
-    Name: <br>
+   <label></label> Name: </label><br>
     <input type="text" name="your name"></p> 
     <p>
-        Roll no: <br>
+       <label>Roll no: </label><br>
         <input type="text" name="Roll no">
     </p>
     <p>
-        I want to joining for <br>
+       <label> I want to joining for</label> <br>
         <select name="sports choice"multi ple size="7">
         <option >sports</option>
         <option value="Chess">chess</option>
@@ -167,11 +167,11 @@
  <h2>Job application form</h2>
  <form enctype="multipart/form-data"> 
     <p>
-       Your Name: <br>
+       <label>Your Name: </label><br>
         <input type="text" name="your name">
  </p>
  <p>
-    Your Education: <br>
+  <label>  Your Education: </label><br>
     <select name=" education" >
     <option>select education</option>   
     <option value="B.E">B.E</option>
@@ -181,7 +181,7 @@
 </select>
  </p>
  <p>
-    You want to apply for the position: <br>
+    <label>You want to apply for the position:</label> <br>
     <select name="select position">
         <option>select position</option>
         <option value="Front end developer">Front end developer</option>
@@ -190,10 +190,11 @@
     </select> 
  </p>
  <p>
-    Your Resume: <br>
+    <label>Your Resume: </label><br>
     <input type="file" name="resume"> </p><br>
 
 <p><input type="submit" value="send details"></p>
  
  </form>
  
+<!--  -->
