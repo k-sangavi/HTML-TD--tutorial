@@ -101,7 +101,7 @@
 
     </p>
     <p>
-        <input type="button" value="send">
+        <input type="submit" value="send">
     </p>
 </body>
 
@@ -129,7 +129,7 @@
     </select>
  </p>
  <p>
-    <input type="button" value="send">
+    <input type="submit" value="send">
  </p>
 
 
@@ -158,9 +158,42 @@
     </p>
 </select>
     <p>
-<input type="button" value="send">
+<input type="submit" value="send">
     </p>
 </form>
 
- 
 
+<!-- Job application form -->
+ <h2>Job application form</h2>
+ <form enctype="multipart/form-data"> 
+    <p>
+       Your Name: <br>
+        <input type="text" name="your name">
+ </p>
+ <p>
+    Your Education: <br>
+    <select name=" education" >
+    <option>select education</option>   
+    <option value="B.E">B.E</option>
+    <option value="B.Tech">B.Tech</option>
+    <option value="B.Sc">B.Sc</option>
+    <option value="B.C.A">B.C.A</option>
+</select>
+ </p>
+ <p>
+    You want to apply for the position: <br>
+    <select name="select position">
+        <option>select position</option>
+        <option value="Front end developer">Front end developer</option>
+        <option value="Back end developer">Back end developer</option>
+        <option value="FullStack developer">Full Stack developer</option>
+    </select> 
+ </p>
+ <p>
+    Your Resume: <br>
+    <input type="file" name="resume"> </p><br>
+
+    <input type="submit" value="send details">
+ 
+ </form>
+ 
